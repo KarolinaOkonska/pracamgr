@@ -22,7 +22,7 @@ public class ExchangeCalculator implements IExchangeCalculator {
     }
 
     @Override
-    public double allShareIndex(String exchangeSymbol) {
+    public double shareIndex(String exchangeSymbol) {
         List<AbstractStock> stocks = getStocks(exchangeSymbol);
         
         if (stocks.isEmpty()) {
